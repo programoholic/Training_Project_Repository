@@ -1,0 +1,27 @@
+version: '2'
+services:
+
+  express-test:
+    image: calvin
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    network_mode: host
+    restart: on-failure 
+    volumes:  
+      - ./dockerScripts:/temp/scripts
+    ports:
+      - 3000:3000
+    depends_on:
+      -calvin-cassandra
+    entrypoint:
+      -/temp/scripts/wait-for-service.sh
+      -'0.0.0.0'
+      -'9042'
+      -'npm start'
+  calvin-cassandra:
+    image: cassandra:latest 
+    network_mode: host
+    restart: on-failure
+    expose: 
+      -9042      

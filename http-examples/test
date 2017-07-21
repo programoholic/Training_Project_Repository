@@ -1,0 +1,19 @@
+93d7b5a220c76b32d2c1bf381f1640396c0fc05f
+
+<form>
+
+					<label> Country</label> <input type="text"   name="country" id="country_val" placeholder="enter country" required/><br>
+					<label>Suger</label> <input type="text" name="suger" id="suger_val" placeholder="enter suger value" accept="0-9"  required /> <br>
+					<label> Salt</label> <input type="text" name="salt" id="salt_val" placeholder="enter suger value"   required=""><br>
+					<button type="button" class="btn btn-info" id="add">Button</button> 
+
+				</form>
+
+
+				request.done(function(msg){
+  	$()
+  });;
+
+  request.fail();
+
+  http://stackoverflow.com/questions/9436534/ajax-tutorial-for-post-and-get

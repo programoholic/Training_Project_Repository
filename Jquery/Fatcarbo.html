@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+	<title>Fat Carbo Protien-Data Visualization</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+</head>
+<body>
+	<h1> Dynamic Graph Manipulation</h1>
+
+	<section class="container">
+
+		<div class="row">
+
+			<div class="col-md-12" id="graph">
+
+
+
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-12"> 
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#AddRecord" id="addB">Add Record</button>
+				<div class="modal fade" id="AddRecord" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">FoodFacts-Add a Record</h4>
+							</div>
+							<div class="modal-body" style="background-color: #cef5bf;">
+
+								<ul>
+                                  
+                                  <li><label for="country_val"> Country</label> 
+                                  <input type="text" class="form-control" id="country_val" placeholder="input country name"></li>
+                                  <li><label for="fat_val">Fat</label>
+                                  <input type="text" class="form-control numOnly" id="fat_val" placeholder="input suger value"> </li>
+                                  <li><label for="protien_val">Protien</label>
+                                  <input type="text" class="form-control numOnly" id="protien_val" placeholder="input salt value">
+                                  </li>
+                                  <li><label for="carbo_val">CarboHydrate</label>
+                                  <input type="text" class="form-control numOnly" id="carbo_val" placeholder="input salt value">
+                                  </li>
+								</ul>
+								<button type="button" class="btn btn-info" id="add">Insert</button>
+								<div class="alert alert-success fade in">
+
+									<a href="#" class="close" data-dismiss="alert">&times;</a>
+
+									<strong>Success!</strong> Data has been inserted successfully.
+ 
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-md-12"> 
+
+				<table id="testAjax">
+					<tr> 
+						<th> Region</th>
+						<th> Fat</th>
+						<th> Protien</th>
+						<th> Carbohydrate</th>
+						<th> Action</th>
+					</tr>
+
+				</table>
+
+			</div>
+
+
+
+		</div>
+
+
+	</section>
+
+	<footer id="foot">
+		
+     
+      Designed and Developed by Anis @all right Reserved
+
+
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="PlotSugerNsalt.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

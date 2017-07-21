@@ -1,0 +1,79 @@
+make repository 
+: select license as " Apache 2.0"
+: Select .gitigone as node
+
+==> clone the project into a new folder in local system
+
+vi .gitignore
+and add *.csv
+
+now copy all files from actual project to newly created files
+
+
+==> in terminal : npm init -y
+     this will create package.json file
+    modify test to  -> start
+    and in value od start type -> node index.js
+:
+==> to verify connection established :  npm start
+
+==> now add ,commit and push all the files in github
+
+==> Register in internal.stackroute.in
+
+==> login into 
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Test createInterface method of readline should be called only once
+
+should be called only once
+
+PASSED
+Test on method of Interface for line event should be called
+
+should be called
+
+PASSED
+Test on method of Interface for close event should be called
+
+should be called
+
+PASSED
+Test Application as Blackbox Test JSON is well formed
+
+Test JSON is well formed
+
+PASSED
+Test Application as Blackbox JSON has expected Number of Objects
+
+JSON has expected Number of Objects
+
+PASSED
+Test Application as Blackbox Test JSON is as expected
+
+Test JSON is as expected
+
+PASSED
+Test Application as Blackbox JSON has expected Number of Objects
+
+JSON has expected Number of Objects
+
+PASSED
+Test Application as Blackbox Test JSON is as expected
+
+Test JSON is as expected
+
+PASSED
+Test Application as Blackbox Test JSON is well formed
+
+Test JSON is well formed
+
+PASSED
+Test Application as Blackbox JSON has expected Number of Objects
+
+JSON has expected Number of Objects

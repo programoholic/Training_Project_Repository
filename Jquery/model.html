@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style type="text/css">
+   
+.alert
+{
+
+  display: none;
+}
+
+ </style>
+<script type="text/javascript">
+  
+
+  $(function(){
+
+    $('#add').on('click',function(){
+
+
+     $('.alert').css('display','block');    
+
+    });
+
+    $('.close').on('click',function(){
+
+
+     $('.alert').css('display','none');    
+
+    });
+
+
+
+  });
+
+
+</script>
+
+</head>
+<body>
+
+
+
+   <button type="button" class="btn btn-info" id="add">Insert</button>
+                
+
+                <div class="alert alert-success fade in">
+
+                  <a href="#" class="close">&times;</a>
+
+                  <strong>Success!</strong> Your message has been sent successfully.
+ 
+                </div>
+
+              </div>
+
+
+</body>
+</html>

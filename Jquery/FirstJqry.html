@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title> JQuery Begining.....</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    
+
+	<script type="text/javascript">
+	  var visFlag=1;
+    
+    $(document).ready(function()
+    {
+      
+         $("#hide").on("click",(function()
+         {
+         	// if(visFlag==0)
+
+
+         	// {
+         	// 	$("#hide").text("Hide The content");
+         	// 	$(".content:first").toggle(1000);
+         	// 	visFlag=1;
+         	// 	// alert(eCounter);
+         	// }
+
+         	// else {
+          //        $("#hide").text("Show The content");
+         	// 	$(".content:first").toggle(1000);
+         	// 	visFlag=0;         		// alert(eCounter);
+         	// }
+
+
+         	$(".content:first").toggle(1000);
+         }));
+
+       $("input").focus(function(){
+        $(this).css({"color":"#ff9f9f","box-shadow":"2px 2px 2px 2px #ff9f9f"});
+    });
+
+
+    $("#fade").click(function()
+    {
+
+    	$("#div1").fadeTo("slow",0.15);
+    	$("#div2").fadeTo("slow",0.34);
+    	$("#div3").fadeTo("slow",0.6);
+
+    });
+  
+    });
+
+
+	</script>
+</head>
+<body>
+ 
+ <h1> Learn Jquery Once </h1>
+    
+
+    <button id="hide"> Hide the content</button>
+ 
+ <p class="content">
+ 	Hello this is a simple text to unser stand how jQuery works !.
+ </p>
+ <p class="content">  This Para wont hide when you click even though its of same class as of first P</p>
+
+   <h2>  Form methods</h2>
+
+    <form id="test">
+    	
+    	<input type="text" name="name" placeholder="enter you name ">
+
+
+    </form>
+
+
+<button id="fade">Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+</html>

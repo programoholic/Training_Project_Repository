@@ -1,0 +1,20 @@
+  <ng-container>
+  <div *ngFor="let movie of favourites" infiniteScroll [infiniteScrollDistance]="-4"  [infiniteScrollThrottle]="1000" (scrolled)="scrolld()">
+    <div class="row">
+      <div class="col-md-5 item">
+        <img src="https://image.tmdb.org/t/p/w320{{movie.poster_path}}" >
+      </div>
+      <div class="col-md-7">
+        <ul>
+          <li><a class="add" (click)="removeFavourite(movie);" style="float: right;"><span><h2 class="glyphicon glyphicon-heart gi-5x"></h2></span></a><li>
+          <li><h1 class="title">{{movie.title}}</h1></li>
+          <li title="Release Date"><span class="glyphicon glyphicon-calendar"></span>{{movie.release_date}}</li>
+          <li title="OverView"><span class="glyphicon glyphicon-film"></span> {{movie.overview}}</li>
+          <!--<li title="Genre"><span class="glyphicon glyphicon-tags"></span> {{ getGenreNames(movie.genre_ids) }}</li>-->
+          <li><span class="glyphicon glyphicon-thumbs-up"></span>{{movie.vote_average}}</li>
+           </ul>
+
+      </div>
+    </div>
+  </div>
+ </ng-container>

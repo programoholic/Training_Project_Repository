@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linkin Park-The Music Begins</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/WebFrontEnd.css">
+	<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".message").hide();
+			$("span.readmore").click(function(){
+				$(".message").show("slow");
+				$(this).hide();
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<h3> <a class="navbar-brand" href="#" id="logo">Linkin Park</a> </h3>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" id="menu">
+						<li><a href="#">Home</a></li>
+						<li>
+							<a href="#">Concerts </a>
+							
+						</li>
+						<li><a href="#">Albums</a></li>
+						<li><a href="#">Bookings</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	<!-- <section class="navbar navbar-inverse navbar-fixed-top">
+		<section class="container">
+			<div class="navbar-header">
+
+				<div class="navbar-brand"><h2 id="logo">Linkin Park </h2></div>
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target="navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right" id="menu">
+					<li>
+						<a href="#">Shows</a>
+					</li>
+
+					<li><a href="#">Albums</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#contact" data-toggle="modal">Login</a></li>
+
+					<li> <a href="#">Signup</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</section> -->
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+		<!-- Carousel indicators -->
+
+		<ol class="carousel-indicators">
+
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+
+		</ol>   
+
+		<!-- Wrapper for carousel items -->
+
+		<div class="carousel-inner">
+
+			<div class="item active">
+
+				<img src="img/linkinpark.png" alt="First Slide">
+			</div>
+
+			<div class="item">
+
+				<img src="img/la.png" alt="Second Slide">
+
+			</div>
+
+			<div class="item">
+				<img src="img/chicago.png" alt="Third Slide">
+
+			</div>
+			<div class="item">
+				<img src="img/ny.png" alt="Third Slide">
+
+			</div>
+
+		</div>
+
+		<!-- Carousel controls -->
+
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+
+			<span class="glyphicon glyphicon-chevron-left"></span>
+
+		</a>
+
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+
+			<span class="glyphicon glyphicon-chevron-right"></span>
+
+		</a>
+
+	</div>
+
+	<section class="container">
+
+		<section class="container-fluid" id="upcoming">
+
+			<div class="row">
+
+				<div class="col"><h3>Latest Release</h3></div>
+			</div>
+			<div class="row" id="newrelease">
+				<div class="col-md-4">
+
+					<img src="img/a.png" alt="new album">
+
+				</div>
+				<div class="col-md-4">
+
+					<ul>
+						<li><h4>ALBUM : ONE MORE LIGHT </h4> </li>
+						<li>RELEASE DATE May 2017</li>
+						<li>GEENRE: Alternative/Indie</li>
+						<li><button type="button" class="btn btn-primary btn-block" style="margin-top: 30px;">PRE ORDER</button></li>
+					</ul>  
+
+				</div>
+
+				<div class="col-md-4 col-xs-18" id="vid">
+					<embed src="https://www.youtube.com/v/DW44aPjOMvI&list=PLlqZM4covn1GspPLr5DCHTtafLkAHxUid" style="margin: 0;">
+					<!-- <button type="button" class="btn btn-link" id="buybutton">Pre Order Now</button> -->
+				</div>
+			</div>
+		</section>
+
+		<section id="concerts">
+
+
+			<h1> Tour 2017</h1>
+
+
+
+			<section class="row" id="events">
+				<section class="even">
+					<div class="col-md-3"><p> May 6 at 12:00 PM </p> </div>
+					<div class="col-md-3"> <p>Maximus Festival Argentina</p></div>
+					<div class="col-md-3"><p> Buenos Aires</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+				</section>
+			</section>
+			<section class="row">
+				<section class="odd">
+					<div class="col-md-3"><p> May 12 at 12:00 PM</p></div>
+					<div class="col-md-3"><p> Maximus Festival Argentina</p></div>
+					<div class="col-md-3"> <p>Buenos Aires</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+				</section>
+			</section>
+			<section class="row">
+				<section class="even">
+					<div class="col-md-3"><p> May 12 at 12:00 PM</p></div>
+					<div class="col-md-3"> <p>cdcececece</p></div>
+                    <div class="col-md-3"> <p>Buenos Aires</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+				</section>
+			</section>
+			
+			<section class="row">
+				<section class="odd">
+					<div class="col-md-3"><p> May 12 at 12:00 PM</p></div>
+					<div class="col-md-3"><p> cdcececece </p></div>
+					<div class="col-md-3"><p> Argentina</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+				</section>
+			</section>
+			<section class="row">
+				<section class="even">
+					<div class="col-md-3"> <p>May 12 at 12:00 PM</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Argentina</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+				</section>
+			</section>
+
+			<span class="readmore glyphicon glyphicon-arrow-down">View More</span>
+
+			<section class="row">
+				<section class="message">
+
+					<div class="col-md-3"> <p>May 12 at 12:00 PM</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Button2</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+
+
+				</section>
+			</section>
+
+
+			<section class="row">
+				<section class="message">
+
+					<div class="col-md-3"> <p>LOcation 2</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Button 1 Button2</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+
+
+				</section>
+			</section>
+
+			<section class="row">
+				<section class="message">
+
+					<div class="col-md-3"> <p>LOcation 2</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Button 1 Button2</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+
+
+				</section>
+			</section>
+
+			<section class="row">
+				<section class="message">
+
+					<div class="col-md-3"> <p>LOcation 2</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Button 1 Button2</p></div>
+					<<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+
+
+				</section>
+			</section>
+
+			<section class="row">
+				<section class="message">
+
+					<div class="col-md-3"> <p>LOcation 2</p></div>
+					<div class="col-md-3"><p> cdcececece</p></div>
+					<div class="col-md-3"><p> Button 1 Button2</p></div>
+					<div class="col-md-3"> <button type="button"  class="btn btn-primary">BUY TICKETS</button></div>
+
+				</section>
+			</section>
+		</section>
+
+	</section>
+
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+	<!--footer start from here-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h6 class="heading7">Studio Updates</h6>
+					<p> <img src="img/studio.jpg" alt="studio"> </p>
+					<p> #TheLinkinParkFamily... we’re busy in the studio working on  next album for you. News coming SOON.
+
+					</p>
+
+
+				</div>
+
+				<div class="col-md-5">
+
+					<h6 class="heading7"> About Us  </h6>
+					<p>  Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified diamond by the RIAA in 2005 and multi-platinum in several other countries.[1] Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work around the world.[2] In 2003, MTV2 named Linkin Park the sixth-greatest band of the music video era and the third-best of the new millennium.[3] Billboard ranked Linkin Park No. 19 on the Best Artists of the Decade chart</p>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+</footer>
+<!--footer start from here-->
+
+<section>
+	<div id="social">
+		<p>Connect to Us</p>
+		<nav><a href="#" class="fa fa-facebook"> </a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-pinterest"></a>
+		</nav>
+		<hr/>
+		<p>copyrights @wavestack 2017 </p>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
